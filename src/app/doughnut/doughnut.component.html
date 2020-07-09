@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/vertical">Bar Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/doughnut">Doughnut Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/line-chart">Line Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/radar">Radar Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/pie">Pie Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/bubble">Bubble Chart</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/polar">Polar Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/scatter">Scatter Chart</a>
+      </li>
+    </ul>
+</div>
+</div>
+</nav>
+<div class="center">
+    <canvas baseChart 
+    [data]="doughnutChartData"
+    [labels]="doughnutChartLabels"
+    [chartType]="doughnutChartType">
+  </canvas>
+</div>
